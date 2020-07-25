@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+body, html
+    margin: 0
+    padding: 0
+    height: 100%
+    width: 100%
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+
+main
+    height: 100%
+    width: 100%
+
+
+aside
+    background-color: white
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    width: 40vw
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+
+    & .fas
+        font-size: 5vh
+        position: fixed
+        top: 2vh
+        left: 2vw
+        cursor: pointer
+    
+    & .fas:hover
+        color: brown
+
+    & form
+        display: flex
+        justify-content: center
+        flex-direction: column
+        width: 20%
+        width: 15vw
+    
+    & input
+        width: 15vw
+        border-bottom: 1px solid black
+        padding: 1vh 1vw
+        border-radius: 50px
+
+    & input:focus
+        outline: none
+    
+    & .btn
+        width: 17vw
+        margin-top: 5vh
+        cursor: pointer
+
+
+section
+    position: relative
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+
+.moveit
+    animation-name: movetoleft
+    animation-duration: 1s
+    left: 40vw
+
+@keyframes movetoleft 
+    from 
+        left: 0vw
+    to 
+        left: 40vw
+
+.moveitback
+    animation-name: moveback
+    animation-duration: 1s
+    left: 0vw
+
+@keyframes moveback 
+    from 
+        left: 40vw
+    to 
+        left: 0vw
+
+.content
+    top: 0
+    bottom: 0
+    position: absolute
+    right: 0
+    z-index: 2
+    transition: transform .5s ease-in-out
+    border-radius: 50px
+    width: 100vw
+    background-color: white
+
+
+    & #videoBG
+        position: absolute
+        width: 100vw
+        height: 100vh
+        object-fit: cover
+        z-index: -1
+
+    & .heading
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+
+
+    & h1
+        margin: 0
+        padding: 0
+        line-height: 0.5
+        position: relative
+        text-align: center
+        font-size: 35vh
+        color: white
+        width: 100%
+        font-weight: 900
+        background-color: black
+        border: 1vh white solid
+    
+    & h1 span
+        font-size: 20vh
+        letter-spacing: 1vw
+        padding: 0 1vw
+        color: black
+        background-color: white
+        border: 1vh black solid
+
+    
+    & button
+        z-index: 3
+        border-radius: 50px
+        width: 20vw
+        margin-top: 5vh
+        padding: 1vh 1vw
+        cursor: pointer
+        font-size: 2vh
+
+    & .container
+        display: flex
+        justify-content: center
+        background-color: white
+
+
+    & .container h1
+        font-size: 5vh
+        margin: 10vh 0 0 0
+        padding: 1vh 1vw
+        text-align: left
+        opacity: 1
+        color: white
+        line-height: 1
+        width: initial
+        border: none
+
+    & .container img
+        object-fit: cover
+        width: 100%
+        height: 40vh
+        object-position: 100% 50%
+    
+    & .container div
+        width: 17.5vw
+        margin: 0 1vw
+
+
+    
+    & .row
+        display: flex
+        height: 40vh
+        margin: 0
+        
+
+    & img
+        object-fit: cover
+        width: 100%
+        height: 100%
+
+    & .left, .right
+        width: 50vw
+        z-index: 3
+    
+    
+    & .left
+        background-color: grey
+    
+    & .right
+        background-color: white
+
+    & p
+        font-size: 2em
+    
+    
+    & h2
+        color: black
+        font-size: 5vh
+        font-weight: 400
+    
+    & .banner
+        height: 60vh
+        background-image: url("../assets/dog_black_whitebg.png")
+        background-size: cover
+        background-position: bottom
+        padding: 5vh 5vw
+
+        button
+            height: 5vh
+            margin: 5vh 1vw
+
